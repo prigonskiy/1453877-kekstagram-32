@@ -1,4 +1,4 @@
-import { ErrorMessages, UrlRoutes, Method } from './const';
+import { ErrorMessages, UrlRoutes, Method } from './const.js';
 
 const load = (route, errorText, method = Method.GET, body = null) =>
   fetch(`${UrlRoutes.BASE}${route}`, {method, body})
